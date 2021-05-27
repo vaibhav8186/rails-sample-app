@@ -1,0 +1,15 @@
+%h1 Hello Users
+
+%div
+  %table.table.table-striped.table-bordered#table_width
+    %thead
+      %tr
+        %th Article Name
+        %th Description
+        %th Rating
+    %tbody
+      - @articles.each do |article|
+        %tr
+          %td= article.name
+          %td= article.description
+          %td= article.rating
